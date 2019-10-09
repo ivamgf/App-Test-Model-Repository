@@ -1,23 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextMaskModule } from 'angular2-text-mask';
 
-import { InputMaskModule } from 'primeng/inputmask';
-import { CheckboxModule } from 'primeng/checkbox';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
 import { AccordionModule } from 'primeng/accordion';
 import { MenuItem } from 'primeng/api';
-import { TableModule } from 'primeng/table';
-import { MenuModule } from 'primeng/menu';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { InputTextModule } from 'primeng/inputtext';
-import { ToastModule } from 'primeng/toast';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +17,13 @@ import { HomeComponent } from './views/pages/home/home.component';
 import { AboutComponent } from './views/pages/about/about.component';
 import { ContactComponent } from './views/pages/contact/contact.component';
 import { CommonModule } from '@angular/common';
-
+import { ListsComponent } from './views/pages/lists/lists.component';
+import { RegisterComponent } from './views/pages/register/register.component';
+import { UpdateComponent } from './views/pages/update/update.component';
+import { DeleteComponent } from './views/pages/delete/delete.component';
+import { AppService } from './app.service';
+import { SplashComponent } from './views/pages/splash/splash.component';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +31,12 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ListsComponent,
+    RegisterComponent,
+    UpdateComponent,
+    DeleteComponent,
+    SplashComponent
   ],
   imports: [
     BrowserModule,
@@ -43,25 +44,17 @@ import { CommonModule } from '@angular/common';
     NgxPaginationModule,
     AccordionModule,
     BrowserAnimationsModule,
-    CommonModule,
-    MenuModule,
-    SplitButtonModule,
-    InputTextModule,
-    FormsModule,
-    InputMaskModule,
-    CheckboxModule,
-    RadioButtonModule,
-    ButtonModule,
-    CalendarModule,
-    TableModule,
+    CommonModule,    
+    FormsModule,    
     HttpClientModule,
-    ToastModule,
     FormsModule,
     ReactiveFormsModule,
     TextMaskModule,
-    HttpClientModule
+    HttpClientModule,
+    ProgressSpinnerModule
   ],
-  providers: [],
+  schemas: [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
