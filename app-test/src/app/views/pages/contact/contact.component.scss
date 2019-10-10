@@ -1,0 +1,25 @@
+section {
+  Background-color: white
+}
+.style-card-contact {
+  width: 480px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  // margin-left: 3%;
+  // margin-right: 3%;
+}
+.style-text {
+  text-align: center;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 576px){
+  .style-card-contact {
+    width: 300px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    // margin-left: 3%;
+    // margin-right: 3%;
+  }
+}
