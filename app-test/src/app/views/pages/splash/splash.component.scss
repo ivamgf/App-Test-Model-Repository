@@ -1,0 +1,39 @@
+section {
+  background-color: white;
+  height: 400px;
+}
+@keyframes ui-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+.style-spinner {
+  float: center;
+  position: relative;
+  width: 300px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 0px;
+}
+.style-title {
+  text-align: center;
+  margin-top: 5%;
+}
+.style-logo {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  width: 40%;
+}
