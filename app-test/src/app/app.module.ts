@@ -24,6 +24,7 @@ import { DeleteComponent } from './views/pages/delete/delete.component';
 import { AppService } from './app.service';
 import { SplashComponent } from './views/pages/splash/splash.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,8 +45,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     NgxPaginationModule,
     AccordionModule,
     BrowserAnimationsModule,
-    CommonModule,    
-    FormsModule,    
+    CommonModule,
+    FormsModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
