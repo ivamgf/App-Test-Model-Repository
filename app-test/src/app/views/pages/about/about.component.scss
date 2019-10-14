@@ -2,12 +2,15 @@ section {
   Background-color: white
 }
 .style-card-about {
-  width: 340px;
   padding-top: 5%;
   padding-bottom: 5%;
+  text-align: justify;
+}
+.card-img {
+  margin-top: 10%;
 }
 .style-card-about-mob {
-  width: 340px;
+  width: 300px;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -17,4 +20,24 @@ section {
 }
 .style-text {
   text-align: justify;
+}
+.style-card-about-mob {
+  display: none;
+}
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .style-card-about-mob {
+    display: block;
+    width: 70%;
+  }
+  .style-card-about {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px){
+  .style-card-about-mob {
+    display: block;
+  }
+  .style-card-about {
+    display: none;
+  }
 }
