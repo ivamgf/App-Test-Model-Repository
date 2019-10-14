@@ -6,8 +6,6 @@ section {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  // margin-left: 3%;
-  // margin-right: 3%;
 }
 .style-text {
   text-align: center;
@@ -15,11 +13,9 @@ section {
 }
 @media only screen and (max-width: 576px){
   .style-card-contact {
-    width: 300px;
+    width: 320px;
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
-    // margin-left: 3%;
-    // margin-right: 3%;
-  }
+  }  
 }
