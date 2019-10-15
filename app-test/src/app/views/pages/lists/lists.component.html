@@ -1,1 +1,44 @@
-<p>lists works!</p>
+<section>
+  <div class="style-accordion">
+      <div class="accordion container" id="accordionExample">
+          <button type="button" class="btn btn-info style-btn-plus"><i class="fas fa-plus"></i></button>
+          <div class="card bg-info shadow p-1 mb-5 rounded">
+            <div class="card-header" id="headingOne">
+
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Usuário:</h5>
+                  <span><i class="fas fa-money-check-alt"></i> Saldo: R$</span>
+                </div>
+                <img src="../../../../assets/images/user-solid.svg" class="ml-3 style-avatar rounded-circle" alt="avatar">
+              </div>
+
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="style-text-btn"><span class="badge badge-dark">Ver mais...</span></div>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body bg-light">
+                <h3>Contatos:</h3>
+                <div>
+                    <span><i class="fas fa-phone-alt"></i> Telefone:</span>
+                </div>
+                <div>
+                  <span><i class="far fa-envelope"></i> E-mail:</span>
+                </div>
+                <div>
+                  <span><i class="fab fa-whatsapp"></i> Whats:</span>
+                </div>
+                <div class="style-group-btn">
+                  <button type="button" class="btn btn-warning style-group-btn"><i class="fas fa-recycle"></i></button>
+                  <button type="button" class="btn btn-danger style-group-btn"><i class="far fa-trash-alt"></i></button>
+                </div>                
+              </div>
+            </div>
+          </div>          
+        </div>        
+  </div>  
+</section>
