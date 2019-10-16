@@ -18,15 +18,12 @@ export class ListsComponent implements OnInit {
 
   ngOnInit() {
   }
-
   showSuccess() {
     this.messageService.add({severity: 'success', summary: 'Sucesso!', detail: 'Usuário Excluído com Sucesso!'});
   }
-
   registerUser() {
     this.router.navigate(['/register']);
   }
-
   updateUser() {
     this.router.navigate(['/update']);
   }
