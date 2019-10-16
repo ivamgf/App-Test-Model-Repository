@@ -1,22 +1,27 @@
 <section>
   <div class="container">
-    <h3>Atualizar Usuário</h3>
-    <div class="form-group">
-      <label for="usr">Nome:</label>
-      <input type="text" class="form-control" id="usr">
+    <div class="style-form">
+        <form>
+          <h3>Atualizar Usuário</h3>
+          <div class="form-group">
+            <label for="usr">Nome:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group">
+            <label for="tel">Telefone:</label>
+            <input type="tel" class="form-control" id="tel">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="whats">Whats:</label>
+            <input type="tel" class="form-control" id="whats">
+          </div>
+          <button type="button" class="btn btn-danger style-btn" (click)="cancelUp()">Cancelar</button>
+          <button type="button" class="btn btn-success">Atualizar</button>
+        </form>
     </div>
-    <div class="form-group">
-      <label for="tel">Telefone:</label>
-      <input type="tel" class="form-control" id="tel">
-    </div>
-    <div class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" class="form-control" id="email">
-    </div>
-    <div class="form-group">
-      <label for="whats">Whats:</label>
-      <input type="tel" class="form-control" id="whats">
-    </div>
-    <button type="button" class="btn btn-success">Atualizar</button>
-  </div>  
+  </div>
 </section>
