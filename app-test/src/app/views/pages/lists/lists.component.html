@@ -1,6 +1,6 @@
 <section>
   
-    <p-toast></p-toast>
+  <p-toast></p-toast>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
@@ -32,7 +32,7 @@
 
   <div class="style-accordion">
       <div class="accordion container" id="accordionExample">
-          <button type="button" class="btn btn-primary style-btn-plus"><i class="fas fa-plus"></i></button>
+          <button type="button" class="btn btn-primary style-btn-plus" (click)="registerUser()"><i class="fas fa-plus"></i></button>
           <div class="card bg-primary shadow p-1 mb-5 rounded">
             <div class="card-header text-white" id="headingOne">
 
@@ -64,7 +64,9 @@
                   <span><i class="fab fa-whatsapp"></i> Whats:</span>
                 </div>
                 <div class="style-group-btn">
-                  <button type="button" class="btn btn-warning style-group-btn"><i class="fas fa-recycle"></i></button>
+                  <button type="button" class="btn btn-warning style-group-btn" (click)="updateUser()">
+                    <i class="fas fa-recycle"></i>
+                  </button>
                   <button type="button" class="btn btn-danger style-group-btn" data-toggle="modal" data-target="#myModal">
                     <i class="far fa-trash-alt"></i>
                   </button>
