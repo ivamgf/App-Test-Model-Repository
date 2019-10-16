@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -10,7 +12,8 @@ import { MessageService } from 'primeng/api';
 export class ListsComponent implements OnInit {
 
   constructor(
-    private messageService: MessageService
+    private messageService: MessageService,
+    private router: Router
     ) { }
 
   ngOnInit() {
@@ -18,6 +21,14 @@ export class ListsComponent implements OnInit {
 
   showSuccess() {
     this.messageService.add({severity: 'success', summary: 'Sucesso!', detail: 'Usuário Excluído com Sucesso!'});
+  }
+
+  registerUser() {
+    this.router.navigate(['/register']);
+  }
+
+  updateUser() {
+    this.router.navigate(['/update']);
   }
 
 }

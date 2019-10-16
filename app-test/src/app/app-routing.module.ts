@@ -5,6 +5,8 @@ import { AboutComponent } from './views/pages/about/about.component';
 import { ContactComponent } from './views/pages/contact/contact.component';
 import { ListsComponent } from './views/pages/lists/lists.component';
 import { SplashComponent } from './views/pages/splash/splash.component';
+import { RegisterComponent } from './views/pages/register/register.component';
+import { UpdateComponent } from './views/pages/update/update.component';
 
 
 const routes: Routes = [
@@ -28,10 +30,18 @@ const routes: Routes = [
   {
       path: 'contact',
       component: ContactComponent
-  },  
+  },
   {
       path: 'lists',
       component: ListsComponent
+  },
+  {
+      path: 'register',
+      component: RegisterComponent
+  },
+  {
+      path: 'update',
+      component: UpdateComponent
   }
 ];
 
