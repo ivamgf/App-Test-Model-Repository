@@ -25,7 +25,6 @@ import { CommonModule } from '@angular/common';
 import { ListsComponent } from './views/pages/lists/lists.component';
 import { RegisterComponent } from './views/pages/register/register.component';
 import { UpdateComponent } from './views/pages/update/update.component';
-import { DeleteComponent } from './views/pages/delete/delete.component';
 import { AppService } from './app.service';
 import { SplashComponent } from './views/pages/splash/splash.component';
 
@@ -40,7 +39,6 @@ import { SplashComponent } from './views/pages/splash/splash.component';
     ListsComponent,
     RegisterComponent,
     UpdateComponent,
-    DeleteComponent,
     SplashComponent
   ],
   imports: [

@@ -1,26 +1,46 @@
 <section>
+
+  <p-toast></p-toast>
+
   <div class="container">
     <div class="style-form">
-      <form>
+      <form [formGroup]="formRegister">
         <h3>Cadastrar Usuário</h3>
-        <div class="form-group">
-          <label for="usr">Nome:</label>
-          <input type="text" class="form-control" id="usr">
+        <label for="usr">Nome:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+          </div>
+          <input type="text" class="form-control" id="user" formControlName="name" required>
         </div>
-        <div class="form-group">
-          <label for="tel">Telefone:</label>
-          <input type="tel" class="form-control" id="tel">
+
+        <label for="telephone">Telefone:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+          </div>
+          <input type="text" [textMask]="{mask: maskPhone}" class="form-control" id="telephone" formControlName="telephone" required>
         </div>
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" class="form-control" id="email">
+
+        <label for="email">Email:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+          </div>
+          <input id="email" type="email" class="form-control"
+          formControlName="email" placeholder="Digite seu e-mail!" required>
         </div>
-        <div class="form-group">
-          <label for="whats">Whats:</label>
-          <input type="tel" class="form-control" id="whats">
+
+        <label for="whats">Whats:</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+          </div>
+          <input type="text" [textMask]="{mask: maskPhone}" class="form-control" id="whats" formControlName="whats" required>
         </div>
+
         <button type="button" class="btn btn-danger style-btn" (click)="cancelReg()">Cancelar</button>
-        <button type="button" class="btn btn-success">Registrar</button>
+        <button type="button" class="btn btn-success" (click)="register()">Registrar</button>
       </form>
     </div>
   </div>
