@@ -33,6 +33,7 @@ export class RegisterComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    document.getElementById('spinner').style.visibility = 'hidden';
   }
   cancelReg() {
     this.router.navigate(['/lists']);
@@ -45,11 +46,13 @@ export class RegisterComponent implements OnInit {
     this.whats = this.formReg[0].whats;
 
     if ( this.name !== '' ) {
-      this.showSuccess();
-      this.timeout();
+      document.getElementById('spinner').style.visibility = 'visible';
+      document.getElementById('spinner').style.position = 'relative';
+      document.getElementById('form').style.visibility = 'hidden';
+      this.timeoutReg();
     } else {
       this.showError();
-      this.timeout();
+      this.timeoutError();
     }
   }
   showSuccess() {
@@ -58,9 +61,23 @@ export class RegisterComponent implements OnInit {
   showError() {
     this.messageService.add({severity: 'error', summary: 'Error', detail: 'O campo de nome não pode estar vazio!'});
   }
+  timeoutReg() {
+    setTimeout(() => {
+      document.getElementById('spinner').style.visibility = 'hidden';
+      document.getElementById('spinner').style.position = 'absolute';
+      document.getElementById('form').style.visibility = 'visible';
+      this.showSuccess();
+      this.timeout();
+    }, 3000);
+  }
   timeout() {
     setTimeout(() => {
+      this.router.navigate(['lists']);
+    }, 4000);
+  }
+  timeoutError() {
+    setTimeout(() => {
       location.reload();
-    }, 5000);
+    }, 4000);
   }
 }

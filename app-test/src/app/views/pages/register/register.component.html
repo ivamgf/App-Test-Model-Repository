@@ -2,7 +2,16 @@
 
   <p-toast></p-toast>
 
-  <div class="container">
+  <div id="spinner" class="card container style-card-spinner">
+    <div class="card-body">
+      <h4 class="card-title">Registrando...</h4>
+      <div class="style-spinner container">
+        <p-progressSpinner [style]="{width: '80px', height: '80px'}" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+      </div>
+    </div>
+  </div>
+
+  <div id="form" class="container">
     <div class="style-form">
       <form [formGroup]="formRegister">
         <h3>Cadastrar Usuário</h3>
