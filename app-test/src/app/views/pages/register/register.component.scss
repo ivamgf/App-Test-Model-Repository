@@ -8,3 +8,33 @@ section {
 .style-btn {
   margin-right: 2%;
 }
+.style-spinner {
+  float: center;
+  position: relative;
+  width: 300px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 0px;
+}
+.style-card-spinner {
+  position: absolute;
+  border: 0px;
+  text-align: center;
+}
+@keyframes ui-progress-spinner-color {
+  100%,
+  0% {
+      stroke: #d62d20;
+  }
+  40% {
+      stroke: #0057e7;
+  }
+  66% {
+      stroke: #008744;
+  }
+  80%,
+  90% {
+      stroke: #ffa700;
+  }
+}
