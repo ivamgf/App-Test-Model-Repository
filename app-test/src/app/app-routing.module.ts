@@ -7,6 +7,8 @@ import { ListsComponent } from './views/pages/lists/lists.component';
 import { SplashComponent } from './views/pages/splash/splash.component';
 import { RegisterComponent } from './views/pages/register/register.component';
 import { UpdateComponent } from './views/pages/update/update.component';
+import { FinanceComponent } from './views/pages/finance/finance.component';
+import { IndicatorsComponent } from './views/pages/indicators/indicators.component';
 
 
 const routes: Routes = [
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
       path: 'update',
       component: UpdateComponent
+  },
+  {
+      path: 'finance',
+      component: FinanceComponent
+  },
+  {
+      path: 'indicators',
+      component: IndicatorsComponent
   }
 ];
 

@@ -27,6 +27,8 @@ import { RegisterComponent } from './views/pages/register/register.component';
 import { UpdateComponent } from './views/pages/update/update.component';
 import { AppService } from './app.service';
 import { SplashComponent } from './views/pages/splash/splash.component';
+import { FinanceComponent } from './views/pages/finance/finance.component';
+import { IndicatorsComponent } from './views/pages/indicators/indicators.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { SplashComponent } from './views/pages/splash/splash.component';
     ListsComponent,
     RegisterComponent,
     UpdateComponent,
-    SplashComponent
+    SplashComponent,
+    FinanceComponent,
+    IndicatorsComponent
   ],
   imports: [
     BrowserModule,

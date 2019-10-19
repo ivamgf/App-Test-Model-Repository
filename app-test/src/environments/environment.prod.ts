@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  APIfinance: 'https://api.hgbrasil.com/'
 };
