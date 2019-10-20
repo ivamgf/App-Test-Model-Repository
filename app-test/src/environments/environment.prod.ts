@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  APIfinance: 'https://api.hgbrasil.com/'
+  APIhg: 'https://api.hgbrasil.com/',
+  APIindicators: 'https://my-json-server.typicode.com/ivamgf/'
 };
