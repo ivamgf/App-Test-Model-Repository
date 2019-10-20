@@ -1,6 +1,6 @@
 section {
   background-color: white;
-  height: 400px;
+  
 }
 .style-title {
   text-align: center;
@@ -20,4 +20,52 @@ section {
   margin-top: 5%;
   margin-bottom: 5%;
   border: 0px;
+}
+.style-card-cloud {
+  position: absolute;
+  text-align: center;
+}
+.style-card-sun {
+  position: absolute;
+  text-align: center;
+}
+.style-card-rain {
+  position: absolute;
+  text-align: center;
+}
+.style-card-storm {
+  position: absolute;
+  text-align: center;
+}
+.style-card-fog {
+  position: absolute;
+  text-align: center;
+}
+.style-card-hail {
+  position: absolute;
+  text-align: center;
+}
+.style-card-clear-night {
+  position: absolute;
+  text-align: center;
+}
+.style-card-cloudly-night {
+  position: absolute;
+  text-align: center;
+}
+.style-card-snow {
+  position: absolute;
+  text-align: center;
+}
+.style-card-error {
+  position: absolute;
+  text-align: center;
+}
+.style-card-cloudDay {
+  position: absolute;
+  text-align: center;
+}
+.style-card-weather {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
