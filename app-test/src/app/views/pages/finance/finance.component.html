@@ -3,5 +3,111 @@
       <div class="card-body">
         <h3 class="style-title">Indicadores Financeiros</h3>
       </div>
+      <div class="row">
+        <div class="card style-card-finance">
+            <div class="card-header bg-info">
+              <div class="style-card-title">
+                <h4 class="card-title">Dólar</h4>
+                <i class="fas fa-dollar-sign fa-2x"></i>
+              </div>              
+            </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="far fa-money-bill-alt"></i> Moeda: {{USDname}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Compra: R$ {{USDbuy}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Venda: R$ {{USDsell}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{USDvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+          <div class="card-header bg-info">
+            <div class="style-card-title">
+              <h4 class="card-title">Euro</h4>
+              <i class="fas fa-euro-sign fa-2x"></i>
+            </div>              
+          </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="far fa-money-bill-alt"></i> Moeda: {{EURname}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Compra: R$ {{EURbuy}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Venda: R$ {{EURsell}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{EURvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+            <div class="card-header bg-info">
+              <div class="style-card-title">
+                <h4 class="card-title">Bitcoin</h4>
+                <i class="fas fa-coins fa-2x"></i>
+              </div>              
+            </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="far fa-money-bill-alt"></i> Moeda: {{BTCname}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Compra: R$ {{BTCbuy}}</p>
+            <p class="card-text"><i class="fas fa-receipt"></i> Venda: R$ {{BTCsell}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{BTCvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+          <div class="card-header bg-info">
+            <div class="style-card-title">
+              <h4 class="card-title">Ibovespa</h4>
+              <i class="fas fa-chart-line fa-2x"></i>
+            </div>              
+          </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="fas fa-landmark"></i> Mercado: {{IBOVname}}</p>
+            <p class="card-text"><i class="fas fa-map-marked-alt"></i> Localização: {{IBOVlocation}}</p>
+            <p class="card-text"><i class="fas fa-chart-bar"></i> Pontos {{IBOVpoints}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{IBOVvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+          <div class="card-header bg-info">
+            <div class="style-card-title">
+              <h4 class="card-title">NASDAQ</h4>
+              <i class="fas fa-chart-line fa-2x"></i>
+            </div>              
+          </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="fas fa-landmark"></i> Mercado: {{NASDAQname}}</p>
+            <p class="card-text"><i class="fas fa-map-marked-alt"></i> Localização: {{NASDAQlocation}}</p>
+            <p class="card-text"><i class="fas fa-chart-bar"></i> Pontos {{NASDAQpoints}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{NASDAQvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+          <div class="card-header bg-info">
+            <div class="style-card-title">
+              <h4 class="card-title">NIKKEI</h4>
+              <i class="fas fa-chart-line fa-2x"></i>
+            </div>              
+          </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="fas fa-landmark"></i> Mercado: {{NIKKEIname}}</p>
+            <p class="card-text"><i class="fas fa-map-marked-alt"></i> Localização: {{NIKKEIlocation}}</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Variação: {{NIKKEIvariation}} %</p>
+          </div>
+        </div>
+    
+        <div class="card style-card-finance">
+          <div class="card-header bg-info">
+            <div class="style-card-title">
+              <h4 class="card-title">Taxas</h4>
+              <i class="fas fa-chart-line fa-2x"></i>
+            </div>              
+          </div>
+          <div class="card-body">            
+            <p class="card-text"><i class="fas fa-calendar-week"></i> Data: {{taxesDate}}</p>
+            <p class="card-text"><i class="fas fa-tags"></i> CDI: {{taxesCDI}} %</p>
+            <p class="card-text"><i class="fas fa-tags"></i> Selic: {{taxesSelic}} %</p>
+            <p class="card-text"><i class="fas fa-chart-area"></i> Fator Diário: {{taxesDailyFactor}}</p>
+          </div>
+        </div>
+      </div>   
+
   </div>
 </section>

@@ -54,7 +54,6 @@ export class HomeComponent implements OnInit {
       data => {
         this.weather = data;
         this.weatherCity.push(this.weather);
-        console.log(this.weatherCity);
         this.city = this.weatherCity[0].results.city;
         this.date = this.weatherCity[0].results.date;
         this.time = this.weatherCity[0].results.time;
@@ -121,7 +120,6 @@ export class HomeComponent implements OnInit {
       }
     );
     // Method HttpClient Weather
-    console.log(this.conditionSlug);
     // Method HttpClient GeoIp
     const geoip$ = this.appService.getGeoip()
     .pipe(
