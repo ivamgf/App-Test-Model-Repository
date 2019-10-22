@@ -1,35 +1,35 @@
 <section>
-  
+
   <p-toast></p-toast>
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
-  
+
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Atenção!</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-  
+
         <!-- Modal body -->
         <div class="modal-body">
             <strong>Você confirma a exclusão de usuário?</strong><br><br>
             Para confirmar a operação clique em excluir!<br>
             Para cancelar a operação, clique em cancelar!
         </div>
-  
+
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="showSuccess()">Excluir</button>
         </div>
-  
+
       </div>
     </div>
   </div>
-
+  <!-- Card Accordion -->
   <div class="style-accordion">
       <div class="accordion container" id="accordionExample">
           <button type="button" class="btn btn-info style-btn-plus" (click)="registerUser()"><i class="fas fa-plus"></i></button>
@@ -76,4 +76,5 @@
           </div>
         </div>
   </div>
+  <!-- Card Accordion -->
 </section>
