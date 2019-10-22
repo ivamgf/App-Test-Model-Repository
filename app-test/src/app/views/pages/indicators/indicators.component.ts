@@ -14,6 +14,9 @@ export class IndicatorsComponent implements OnInit {
 
   public Indicators: Indicators[];
   public Indicators$: Observable<Indicators[]>;
+  public indicatorsEcon: any[] = [];
+  public indicatorsAnos: any[] = [];
+  public cardIndicators: any;
 
   constructor(
     private appService: AppService
@@ -32,7 +35,12 @@ export class IndicatorsComponent implements OnInit {
     indicators$.subscribe(
       data => {
         this.Indicators = data;
-        console.log(this.Indicators);
+        this.indicatorsEcon.push(this.Indicators);
+        this.indicatorsAnos = this.indicatorsEcon[0].Anos;
+        let i;
+        for (i = 0; i < this.indicatorsAnos.length; i++) {
+          this.cardIndicators = this.indicatorsAnos[i];
+        }
       }
     );
     // Method HttpClient
