@@ -7,7 +7,7 @@
 
   <!-- Card Accordion -->
   <div class="style-accordion" *ngFor="let indicator of indicatorsAnos">
-    <div class="accordion container" id="accordionExample">
+    <div class="container">
         <div class="card bg-info shadow p-1 mb-5 rounded">
           <div class="card-header text-white" id="headingOne">
 
@@ -17,15 +17,9 @@
                 <span><i class="fas fa-calendar-week"></i> {{indicator.Ano}}</span>
               </div>
             </div>
-
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <div class="style-text-btn"><span class="badge badge-light">Ver mais...</span></div>
-              </button>
-            </h2>
           </div>
 
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div>
             <div class="card-body bg-light">
               <h3>Indicadores Econômicos {{indicator.Ano}}</h3>
               <div>
