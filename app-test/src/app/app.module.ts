@@ -12,6 +12,7 @@ import { MenuItem } from 'primeng/api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastModule } from 'primeng/toast';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ChartModule } from 'primeng/chart';
 
 // Import Components
 import { AppRoutingModule } from './app-routing.module';
@@ -59,7 +60,8 @@ import { IndicatorsComponent } from './views/pages/indicators/indicators.compone
     TextMaskModule,
     HttpClientModule,
     ProgressSpinnerModule,
-    ToastModule
+    ToastModule,
+    ChartModule
   ],
   schemas: [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ],
   providers: [AppService],

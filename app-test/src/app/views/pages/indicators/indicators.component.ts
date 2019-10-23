@@ -12,6 +12,7 @@ import { Indicators } from './../../../interfaces/indicators';
 })
 export class IndicatorsComponent implements OnInit {
 
+  public data: any;
   public Indicators: Indicators[];
   public Indicators$: Observable<Indicators[]>;
   public indicatorsEcon: any[] = [];
@@ -20,7 +21,25 @@ export class IndicatorsComponent implements OnInit {
 
   constructor(
     private appService: AppService
-  ) { }
+  ) {
+      this.data = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+            {
+                label: 'First Dataset',
+                backgroundColor: '#42A5F5',
+                borderColor: '#1E88E5',
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: 'Second Dataset',
+                backgroundColor: '#9CCC65',
+                borderColor: '#7CB342',
+                data: [28, 48, 40, 19, 86, 27, 90]
+            }
+        ]
+      };
+    }
 
   ngOnInit() {
     // Method HttpClient
@@ -45,5 +64,4 @@ export class IndicatorsComponent implements OnInit {
     );
     // Method HttpClient
   }
-
 }
