@@ -88,7 +88,6 @@ export class FinanceComponent implements OnInit {
         this.taxesCDI = this.financesIndicators[0].results.taxes[0].cdi;
         this.taxesSelic = this.financesIndicators[0].results.taxes[0].selic;
         this.taxesDailyFactor = this.financesIndicators[0].results.taxes[0].daily_factor;
-        console.log(this.financesIndicators);
       }
     );
     // Method HttpClient
