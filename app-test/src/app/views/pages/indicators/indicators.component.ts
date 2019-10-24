@@ -18,28 +18,15 @@ export class IndicatorsComponent implements OnInit {
   public indicatorsEcon: any[] = [];
   public indicatorsAnos: any[] = [];
   public cardIndicators: any;
+  public ano: any[] = [];
+  public pib: any[] = [];
+  public ipca: any[] = [];
+  public salario: any[] = [];
+  public cesta: any[] = [];
 
   constructor(
     private appService: AppService
-  ) {
-      this.data = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [
-            {
-                label: 'First Dataset',
-                backgroundColor: '#42A5F5',
-                borderColor: '#1E88E5',
-                data: [65, 59, 80, 81, 56, 55, 40]
-            },
-            {
-                label: 'Second Dataset',
-                backgroundColor: '#9CCC65',
-                borderColor: '#7CB342',
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
-        ]
-      };
-    }
+  ) { }
 
   ngOnInit() {
     // Method HttpClient
@@ -59,9 +46,40 @@ export class IndicatorsComponent implements OnInit {
         let i;
         for (i = 0; i < this.indicatorsAnos.length; i++) {
           this.cardIndicators = this.indicatorsAnos[i];
+          this.ano.push(this.indicatorsAnos[i].Ano);
+          this.pib.push(this.indicatorsAnos[i].PIB);
+          this.ipca.push(this.indicatorsAnos[i].IPCA);
+          this.salario.push(this.indicatorsAnos[i].salarioMedio);
+          this.cesta.push(this.indicatorsAnos[i].cestaBasica);
+          this.chartBar(this.ano, this.pib, this.ipca);
         }
       }
     );
     // Method HttpClient
+  }
+  chartBar(data1, data2, data3) {
+    this.data = {
+      labels: [data1[0], data1[1], data1[2], data1[3],
+              data1[4], data1[5], data1[6], data1[7],
+              data1[8], data1[9], data1[10] ],
+      datasets: [
+          {
+              label: 'PIB',
+              backgroundColor: '#42A5F5',
+              borderColor: '#1E88E5',
+              data: [data2[0], data2[1], data2[2], data2[3],
+              data2[4], data2[5], data2[6], data2[7],
+              data2[8], data2[9], data2[10]]
+          },
+          {
+              label: 'IPCA',
+              backgroundColor: '#9CCC65',
+              borderColor: '#7CB342',
+              data: [data3[0], data3[1], data3[2], data3[3],
+                    data3[4], data3[5], data3[6], data3[7],
+                    data3[8], data3[9], data3[10] ]
+          }
+        ]
+      };
   }
 }
